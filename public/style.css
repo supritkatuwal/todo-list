@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system_ui, sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+h1 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: #0ea5e9;
+}
+
+.input-card {
+    background-color: #1e2937;
+    border-radius: 1.5rem;
+    padding: 1.75rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.3);
+}
+
+input[type="text"] {
+    width: 100%;
+    background-color: #334155;
+    border: none;
+    padding: 1rem 1.25rem;
+    border-radius: 1rem;
+    color: white;
+    font-size: 1.05rem;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.3);
+}
+
+.controls {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+select {
+    background-color: #334155;
+    border: none;
+    padding: 0.85rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #0ea5e9;
+    color: white;
+    border: none;
+    padding: 0.85rem 1.5rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #0284c8;
+    transform: translateY(-2px);
+}
+
+.task-item {
+    background-color: #1e2937;
+    border-radius: 1rem;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+}
+
+.task-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgb(14 165 233 / 0.2);
+}
+
+.task-item.completed p {
+    text-decoration: line-through;
+    color: #64748b;
+}
+
+.priority {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-weight: 500;
+}
+
+.high {
+    background-color: #ef444420;
+    color: #f87171;
+}
+
+.medium {
+    background-color: #f59e0b20;
+    color: #fbbf24;
+}
+
+.low {
+    background-color: #10b98120;
+    color: #34d399;
+}
+
+.delete-btn {
+    opacity: 0;
+    transition: opacity 0.3s;
+    color: #ef4444;
+}
+
+.task-item:hover .delete-btn {
+    opacity: 1;
+}
